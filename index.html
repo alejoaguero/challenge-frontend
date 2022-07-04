@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/main.css">    
+    <title>Alquiler de Vehiculos</title>
+</head>
+<body>
+    <div class="header">
+        <div class="form">
+            <h6 class="form_title">Filter by</h6>
+            <select name="Groups" id="selectGroup" class="form_select" >
+                <option value="groupAll">All</option>
+                <option value="A">Grupo A</option> 
+                <option value="B">Grupo B</option>
+                <option value="C">Grupo C</option>
+                <option value="D">Grupo D</option>
+                <option value="E">Grupo E</option>
+                <option value="F">Grupo F</option>
+                <option value="G">Grupo G</option>
+                <option value="H">Grupo H</option>
+                <option value="K">Grupo K</option>
+                <option value="L">Grupo L</option>
+                <option value="P">Grupo P</option>
+                <option value="S">Grupo S</option>
+                <option value="V">Grupo V</option>
+                <option value="W">Grupo W</option>
+                <option value="Z">Grupo Z</option>
+            </select>
+                <form action="" id="filter">
+                    <div class="form-filter form-check">
+                        <div class="form-filter-option">
+                            <input type="checkbox" class="form-check-input" name="manual" id="filter_manual">
+                            <label for="filter_manual"  class="form-check-label label-margin">Manual transmission</label>
+                        </div>
+                        <div class="form-filter-option">
+                            <input type="checkbox" class="form-check-input" name="seats" id="filter_seats">
+                            <label for="filter_sets" class="form-check-label label-margin">5 seats</label>
+                        </div>
+                        <div class="form-filter-option">
+                            <input type="checkbox" class="form-check-input"  name="convert" id="filter_convert">
+                            <label for="filter_convert" class="form-check-label label-margin">Convertibles</label>
+                        </div>
+                        <div class="form-filter-option">
+                            <input type="checkbox" class="form-check-input"  name="auto" id="filter_auto">
+                            <label for="filter_auto" class="form-check-label">Automatic transmission</label>
+                        </div>
+                        <div class="form-filter-option">
+                            <input type="checkbox" class="form-check-input" name="moreSeats" id="filter_moreSeats">
+                            <label for="filter_seatsMore" class="form-check-label">7 seats or more</label>
+                        </div>
+                    </div>
+                </form>
+        </div>
+    </div>
+    <div id="carList">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="module" src="./JS/app.js"></script>    
+</body>
+</html>

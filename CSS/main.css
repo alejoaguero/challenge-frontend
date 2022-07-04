@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "Rubik-Light";
+  src: url("../fonts/Rubik-Light.ttf");
+}
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url("../fonts/Rubik-Regular.ttf");
+}
+body {
+  background-color: lightgrey;
+}
+body p {
+  margin-bottom: 0;
+}
+body .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .header .form {
+  width: 1250px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  box-shadow: 0px 2px 2px grey;
+  padding: 30px;
+  border-radius: 10px;
+}
+body .header .form input:checked {
+  background-color: #B01313;
+}
+body .header .form .form_title {
+  color: #B01313;
+  margin-right: 40px;
+  font-family: "Rubik-Regular";
+  font-weight: 600;
+}
+body .header .form .form_select {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0px 20px;
+}
+body .header .form .form_select options {
+  padding: 10px;
+}
+body .header .form .form-filter {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+body .header .form .form-filter input {
+  margin-right: 10px;
+  border-color: grey;
+}
+body .header .form .form-filter .label-margin {
+  margin-bottom: 10px;
+}
+body .header .form .form-filter .form-filter-option {
+  padding: 0px 50px;
+  font-family: "Rubik-Light";
+}
+
+@font-face {
+  font-family: "Rubik-Light";
+  src: url("../fonts/Rubik-Light.ttf");
+}
+@font-face {
+  font-family: "Rubik-Medium";
+  src: url("../fonts/Rubik-Medium.ttf");
+}
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url("../fonts/Rubik-Regular.ttf");
+}
+@font-face {
+  font-family: "Rubik-SemiBold";
+  src: url("../fonts/Rubik-SemiBold.ttf");
+}
+#carList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+#carList .card_cars {
+  width: 1230px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px grey;
+}
+#carList .card_cars .card_img {
+  width: 350px;
+}
+#carList .card_cars .card_caract {
+  margin-top: 60px;
+}
+#carList .card_cars .card_caract h6 {
+  font-family: "Rubik-Medium";
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  opacity: 0.4;
+}
+#carList .card_cars .card_caract div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+#carList .card_cars .card_caract div img {
+  width: 15px;
+}
+#carList .card_cars .card_caract div p {
+  margin-left: 10px;
+  margin-bottom: 0;
+  font-family: "Rubik-Light";
+  font-weight: 600;
+}
+#carList .card_cars .card_titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#carList .card_cars .card_titles h4 {
+  font-family: "Rubik-Medium";
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #B01313;
+}
+#carList .card_cars .card_titles h6 {
+  font-family: "Rubik-Regular";
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 5;
+  letter-spacing: 2px;
+}
+#carList .card_cars .card_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+#carList .card_cars .card_button button {
+  height: 50px;
+  width: 150px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  font-family: "Rubik-Regular";
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+#carList .card_cars .card_button button svg {
+  margin-right: 15px;
+}
+#carList .card_cars .card_button button:hover {
+  background-color: black !important;
+}
+#carList .card_cars .card_rates {
+  margin-top: 60px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+#carList .card_cars .card_rates h6 {
+  font-family: "Rubik-Medium";
+  font-weight: 600;
+  letter-spacing: 2px;
+  opacity: 0.4;
+}
+#carList .card_cars .card_rates .rates {
+  box-shadow: 0px 1px 0px lightgrey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#carList .card_cars .card_rates .rates div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 15px 0px;
+}
+#carList .card_cars .card_rates .rates div div {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#carList .card_cars .card_rates .rates div div .checkbox-round {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 50%;
+  margin-left: -5.3px;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid white;
+}
+#carList .card_cars .card_rates .rates div div .checkbox-round:checked {
+  background-color: #B01313;
+  border: 1px solid grey;
+}
+#carList .card_cars .card_rates .rates div label {
+  font-family: "Rubik-Regular";
+  font-weight: 600;
+  margin-bottom: 0;
+}
+#carList .card_cars .card_rates .rates p {
+  color: #B01313;
+  font-family: "Rubik-Regular";
+  font-weight: 600;
+  margin-bottom: 0;
+}
+#carList .card_cars .card_rates .rates .rate-price {
+  font-family: "Rubik-SemiBold";
+  font-weight: 600;
+  font-size: 20px;
+}
+#carList .card_cars .card_rates .rates .rate-price span {
+  margin-right: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=main.css.map */
