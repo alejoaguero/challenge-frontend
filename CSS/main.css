@@ -33,6 +33,12 @@ body .header .form {
   padding: 30px;
   border-radius: 10px;
 }
+@media (max-width: 768px) {
+  body .header .form {
+    width: 100%;
+    height: 20px;
+  }
+}
 body .header .form input:checked {
   background-color: #B01313;
 }
@@ -52,6 +58,12 @@ body .header .form .select {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 768px) {
+  body .header .form .select {
+    width: 100%;
+    height: 10px;
+  }
 }
 body .header .form .select .select_selected {
   display: flex;
@@ -165,8 +177,19 @@ body .header .form .form-filter .form-filter-option {
   border-radius: 10px;
   box-shadow: 0px 1px 3px grey;
 }
+@media (max-width: 768px) {
+  #carList .card_cars {
+    width: 100%;
+    height: 300px;
+  }
+}
 #carList .card_cars .card_img {
   width: 350px;
+}
+@media (max-width: 768px) {
+  #carList .card_cars .card_img {
+    width: 150px;
+  }
 }
 #carList .card_cars .card_caract {
   margin-top: 60px;
@@ -177,6 +200,11 @@ body .header .form .form-filter .form-filter-option {
   margin-bottom: 20px;
   letter-spacing: 2px;
   opacity: 0.4;
+}
+@media (max-width: 768px) {
+  #carList .card_cars .card_caract h6 {
+    font-size: 10px;
+  }
 }
 #carList .card_cars .card_caract div {
   display: flex;
@@ -204,12 +232,22 @@ body .header .form .form-filter .form-filter-option {
   letter-spacing: 2px;
   color: #B01313;
 }
+@media (max-width: 768px) {
+  #carList .card_cars .card_titles h4 {
+    font-size: 16px;
+  }
+}
 #carList .card_cars .card_titles h6 {
   font-family: "Rubik-Regular";
   font-weight: 600;
   font-size: 15px;
   margin-bottom: 5;
   letter-spacing: 2px;
+}
+@media (max-width: 768px) {
+  #carList .card_cars .card_titles h6 {
+    font-size: 10px;
+  }
 }
 #carList .card_cars .card_button {
   display: flex;
@@ -227,8 +265,14 @@ body .header .form .form-filter .form-filter-option {
   letter-spacing: 1px;
   font-size: 13px;
 }
+@media (max-width: 768px) {
+  #carList .card_cars .card_button button {
+    width: 100px;
+    text-align: center;
+  }
+}
 #carList .card_cars .card_button button svg {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 #carList .card_cars .card_button button:hover {
   background-color: black !important;
@@ -243,6 +287,11 @@ body .header .form .form-filter .form-filter-option {
   font-weight: 600;
   letter-spacing: 2px;
   opacity: 0.4;
+}
+@media (max-width: 768px) {
+  #carList .card_cars .card_rates h6 {
+    font-size: 10px;
+  }
 }
 #carList .card_cars .card_rates .rates {
   box-shadow: 0px 1px 0px lightgrey;
@@ -265,6 +314,12 @@ body .header .form .form-filter .form-filter-option {
   border-radius: 50%;
   margin-right: 10px;
 }
+@media (max-width: 768px) {
+  #carList .card_cars .card_rates .rates div div {
+    width: 10px;
+    height: 10px;
+  }
+}
 #carList .card_cars .card_rates .rates div div .checkbox-round {
   position: absolute;
   width: 10px;
@@ -280,6 +335,13 @@ body .header .form .form-filter .form-filter-option {
   cursor: pointer;
   border: 1px solid white;
 }
+@media (max-width: 768px) {
+  #carList .card_cars .card_rates .rates div div .checkbox-round {
+    width: 5px;
+    height: 5px;
+    margin-left: -2.5px;
+  }
+}
 #carList .card_cars .card_rates .rates div div .checkbox-round:checked {
   background-color: #B01313;
   border: 1px solid grey;
@@ -288,6 +350,11 @@ body .header .form .form-filter .form-filter-option {
   font-family: "Rubik-Regular";
   font-weight: 600;
   margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  #carList .card_cars .card_rates .rates div label {
+    font-size: 10px;
+  }
 }
 #carList .card_cars .card_rates .rates .rate-inclusions {
   color: #B01313;

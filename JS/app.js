@@ -44,6 +44,16 @@ $(document).ready(function() {
 
         $('.triangulo').css({visibility:"hidden"});
         $('.list-group').css({visibility:"hidden"});
+
+
+    })
+
+    $('.select').on( "dbclick",()=>{
+
+        $('.triangulo').css({visibility:"hidden"});
+        $('.list-group').css({visibility:"hidden"});
+
+        
     })
 
 
