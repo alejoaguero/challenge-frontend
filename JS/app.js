@@ -76,18 +76,16 @@ $(document).ready(function() {
 
                         }
 
-                    else{
-                        return false;
-                    }
-
                 })
 
+                
+                carsFilter.length == [] ? carsfilterM = cars : ""
+                
+
+
+
                 $('#carList').html('');
-
-
                 carsfilterM.map(car => {
-
-                    car == null ? console.log('no hay carros') : viewCar(car);
                     viewCar(car);
                 })
     })
