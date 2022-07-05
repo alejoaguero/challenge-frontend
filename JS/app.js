@@ -47,9 +47,6 @@ $(document).ready(function() {
         $('.triangulo').toggle()    
     })
 
-
-    $
-
     $('input[type=checkbox]').on('click',async (e)=>{
 
             if($(`#${e.target.id}`).prop('checked')){
