@@ -180,7 +180,6 @@ body .header .form .form-filter .form-filter-option {
 @media (max-width: 768px) {
   #carList .card_cars {
     width: 100%;
-    height: 300px;
   }
 }
 #carList .card_cars .card_img {

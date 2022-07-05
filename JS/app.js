@@ -40,27 +40,16 @@ $(document).ready(function() {
             viewCar(car);
         })
 
-
-
-        $('.triangulo').css({visibility:"hidden"});
-        $('.list-group').css({visibility:"hidden"});
-
-
     })
 
-    $('.select').on( "dbclick",()=>{
-
-        $('.triangulo').css({visibility:"hidden"});
-        $('.list-group').css({visibility:"hidden"});
-
-        
+    $('.select').click(()=>{
+        $('.list-group').toggle()
+        $('.triangulo').toggle()    
     })
-
 
     $('input[type=checkbox]').on('click',async (e)=>{
 
             if($(`#${e.target.id}`).prop('checked')){
-
                 carsFilter.push(e.target.id);
             }
                 else{
