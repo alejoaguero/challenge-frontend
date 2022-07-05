@@ -11,7 +11,7 @@ Desarrollar utilizando el carsJSON y las imágenes adjuntas, como referencia vis
 
 `●	Agregar un select con opciones por cada grupo de vehiculo (“A”, “B”, “C”, etc), como se muestra en la imagen 2.`
 
-`●	Filtrar autos por algunas Features (5 puertas, transmisión manual, etc) con checkbox como se muestra en la imagen 3.`
+`●	Filtrar autos por algunas Features (5 puertas, transmisión manual, etc) con checkbox como se muestra en la imagen 3`
 
 `●	Mostrar los listados de Inclusions de cada Rate en un modal como se muestra en la imagen 5.`
 

@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Rubik-Regular';
+    src: url('../fonts/Rubik-Regular.ttf');
+}
+@font-face {
+    font-family: 'Rubik-Light';
+    src: url('../fonts/Rubik-Light.ttf');
+}
+
+
+.modal-content{
+    padding: 20px;
+    border-radius: 20px;
+    .modal-header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 0px;
+            div{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                margin-bottom: 20px;
+                p{
+                    color: #B01313;
+                    font-family: 'Rubik-Regular';
+                    font-weight: 600;
+                    margin-left: 20px;
+                    letter-spacing: 1px;
+                }
+                    button{
+                        border: none;
+                        line-height: 0;
+                        span{
+                            font-weight: 600;
+                            font-size: 30px;
+                            color: lightgray;
+                            background-color: white;
+                        }
+                    }
+            }
+        .modal-title{
+            font-family: 'Rubik-Regular';
+            font-weight: 600;
+            opacity: 0.5;
+            letter-spacing: 2px;
+            margin-left: 20px;
+        }
+    }
+    
+    
+    .modal-body{
+        display: flex;
+        flex-direction: column;
+            div{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 10px;
+                p{
+                    font-family: 'Rubik-Regular';
+                    font-size: 15px;
+                }
+    
+                svg{
+                    margin-right: 10px;
+                    color: #B01313;
+                }
+            }
+    }
+}

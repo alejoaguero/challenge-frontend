@@ -8,6 +8,7 @@ export class Car{
 
 
     async getAllCar(obj){
+        try{
         const response = await fetch(this.url);
         const data = await response.json();
         const cars = [] 
@@ -18,27 +19,31 @@ export class Car{
             }
 
         return cars
+        }
+        catch(err){
+            console.log(err)
+        }
     }
 
     async getCarByGroup(group){
-        const data = await this.getAllCar();
-        let cars
-        const grupo = data.filter(car => car.group == group);
+        try{
+            const data = await this.getAllCar();
+            let cars
+            const grupo = data.filter(car => car.group == group);
 
-        if(grupo.length > 0){
-            cars = grupo;
-        }
-            else{
-                cars = data;
+            if(grupo.length > 0){
+                cars = grupo;
             }
+                else{
+                    cars = data;
+                }
 
-            return cars;
+                return cars
+        }
+        catch(err){
+            console.log(err)
+        }
     }
 
-
-    async getCarByInfo(obj){
-        const data = await this.getAllCar();
-        
-
-    }
+    
 }

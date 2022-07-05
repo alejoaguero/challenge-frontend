@@ -156,17 +156,23 @@
                                             margin-bottom: 0;
                                         }
                                 }
-                                p{
+                                .rate-inclusions{
                                     color: #B01313;
                                     font-family: 'Rubik-Regular';
                                     font-weight: 600;
                                     margin-bottom: 0;
+                                    cursor: pointer;
+                                    text-decoration: none;
+
+                                    
                                 }
                                 .rate-price{
                                     font-family: 'Rubik-SemiBold';
                                     font-weight: 600;
                                     font-size: 20px;
+                                    color: #B01313;
                                         span{
+                                            font-family: 'Rubik-Light';
                                             margin-right: 10px;
                                         }
                         }

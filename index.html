@@ -12,54 +12,64 @@
     <div class="header">
         <div class="form">
             <h6 class="form_title">Filter by</h6>
-            <select name="Groups" id="selectGroup" class="form_select" >
-                <option value="groupAll">All</option>
-                <option value="A">Grupo A</option> 
-                <option value="B">Grupo B</option>
-                <option value="C">Grupo C</option>
-                <option value="D">Grupo D</option>
-                <option value="E">Grupo E</option>
-                <option value="F">Grupo F</option>
-                <option value="G">Grupo G</option>
-                <option value="H">Grupo H</option>
-                <option value="K">Grupo K</option>
-                <option value="L">Grupo L</option>
-                <option value="P">Grupo P</option>
-                <option value="S">Grupo S</option>
-                <option value="V">Grupo V</option>
-                <option value="W">Grupo W</option>
-                <option value="Z">Grupo Z</option>
-            </select>
+                <div class="select">
+                    <div class="select_selected">
+                        <span class="select_info"><p>All</p></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                    <div class="triangulo" ></div>
+                    <ul class="list-group">                        
+                        <li id="All">All</li>
+                        <li id="A">Group A</li>
+                        <li id="B">Group B</li>
+                        <li id="C">Group C</li>
+                        <li id="D">Group D</li>
+                        <li id="E">Group E</li>
+                        <li id="F">Group F</li>
+                        <li id="G">Group G</li>
+                        <li id="H">Group H</li>
+                        <li id="K">Group K</li>
+                        <li id="L">Group L</li>
+                        <li id="P">Group P</li>
+                        <li id="S">Group S</li>
+                        <li id="V">Group V</li>
+                        <li id="W">Group W</li>
+                        <li id="Z">Group Z</li>
+                    </ul>
+                </div>
                 <form action="" id="filter">
                     <div class="form-filter form-check">
                         <div class="form-filter-option">
-                            <input type="checkbox" class="form-check-input" name="manual" id="filter_manual">
-                            <label for="filter_manual"  class="form-check-label label-margin">Manual transmission</label>
+                            <input type="checkbox" class="form-check-input checked" name="manual" id="Manual">
+                            <label for="Manual"  class="form-check-label label-margin">Manual transmission</label>
                         </div>
                         <div class="form-filter-option">
-                            <input type="checkbox" class="form-check-input" name="seats" id="filter_seats">
-                            <label for="filter_sets" class="form-check-label label-margin">5 seats</label>
+                            <input type="checkbox" class="form-check-input checked" name="seats" id="5">
+                            <label for="5" class="form-check-label label-margin">5 seats</label>
                         </div>
                         <div class="form-filter-option">
-                            <input type="checkbox" class="form-check-input"  name="convert" id="filter_convert">
-                            <label for="filter_convert" class="form-check-label label-margin">Convertibles</label>
+                            <input type="checkbox" class="form-check-input checked"  name="convert" id="Convertible">
+                            <label for="Convertible" class="form-check-label label-margin">Convertibles</label>
                         </div>
                         <div class="form-filter-option">
-                            <input type="checkbox" class="form-check-input"  name="auto" id="filter_auto">
-                            <label for="filter_auto" class="form-check-label">Automatic transmission</label>
+                            <input type="checkbox" class="form-check-input checked"  name="auto" id="Automatic">
+                            <label for="Automatic" class="form-check-label">Automatic transmission</label>
                         </div>
                         <div class="form-filter-option">
-                            <input type="checkbox" class="form-check-input" name="moreSeats" id="filter_moreSeats">
-                            <label for="filter_seatsMore" class="form-check-label">7 seats or more</label>
-                        </div>
+                            <input type="checkbox" class="form-check-input checked" name="moreSeats" id="7">
+                            <label for="7" class="form-check-label">7 seats or more</label>
+                        </div>  
                     </div>
                 </form>
         </div>
     </div>
     <div id="carList">
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="module" src="./JS/app.js"></script>    
 </body>
 </html>
