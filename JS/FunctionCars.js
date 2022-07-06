@@ -10,11 +10,6 @@ export const viewCar = (car) =>{
         $('#carList').append(boxCar(name1,group1,feature1,rates1,code1,urlImg1));
         $('#carList').append(boxCar(name2,group2,feature2,rates2,code2,urlImg2));
 
-            if(car == ' '){
-                $('#carList').append(`<div class="card_cars">
-                <h4>No hay autos disponibles</h4>
-                </div>`)
-            }
 
 }        
 
@@ -87,7 +82,7 @@ const boxRates = (rates) => {
          listRates += `<div class="rates">
                             <div>
                                 <div class="boxCheck">
-                                    <input type="checkbox" class="checkbox-round" id='rate-${rate}'>
+                                    <input type="radio" name="radio" class="checkbox-round" id='rate-${rate}'>
                                 </div>
                                 <label for='rate-${rate}'>${rate} -  ${rateData.name}</label>
                             </div>

@@ -47,14 +47,15 @@ $(document).ready(function() {
         $('.triangulo').toggle()    
     })
 
-    $('input[type=checkbox]').on('click',async (e)=>{
+    $('input[type=checkbox]').on('change',async (e)=>{
 
             if($(`#${e.target.id}`).prop('checked')){
                 carsFilter.push(e.target.id);
             }
-                else{
-                    carsFilter.splice(carsFilter.indexOf(e.target.id),1);
-                }
+            
+            else{
+                carsFilter.splice(carsFilter.indexOf(e.target.id),1);
+            }
 
 
                 console.log(carsFilter);
