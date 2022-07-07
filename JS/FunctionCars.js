@@ -1,11 +1,10 @@
 //Funciones
 
 //Destructura y asigna las variables a los elementos del DOM
-export const viewCar = (car) =>{
+export const viewCarAll = (car) =>{
 
     const {Name: name1,VehGroup:group1,Features2: feature1,Rates: rates1,Code:code1,PictureURL:urlImg1} = car.Company1;
     const {Name: name2,VehGroup:group2,Features2: feature2,Rates: rates2,Code:code2,PictureURL:urlImg2} = car.Company2;
-
 
         $('#carList').append(boxCar(name1,group1,feature1,rates1,code1,urlImg1));
         $('#carList').append(boxCar(name2,group2,feature2,rates2,code2,urlImg2));
@@ -13,6 +12,13 @@ export const viewCar = (car) =>{
 
 }        
 
+
+export const viewCarFilter = (car) =>{
+
+    const {Name: name,VehGroup:group,Features2: feature,Rates: rates,Code:code,PictureURL:urlImg} = car;
+
+    $('#carList').append(boxCar(name,group,feature,rates,code,urlImg));
+}
 
 
 
