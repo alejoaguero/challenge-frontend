@@ -3,9 +3,11 @@ import {viewCarAll, viewCarFilter} from './FunctionCars.js';
 
 $(document).ready(function() {
     let carsFilter = [];
-    const car = new Car('./carsJSON.json');
+    const car = new Car('./carsJSON.json'); // inicializamos el objeto car
     let  groupCars  = null
 
+
+    //Visibilidad de lista de grupos de coches
     $('.select').click(()=>{
 
         $('.triangulo').css({visibility:"visible"});
@@ -17,7 +19,7 @@ $(document).ready(function() {
 
 
 
-
+    // Muestra todos los coches
     car.getAllCar()
     .then(cars => {
         cars.map(car => {
@@ -27,7 +29,7 @@ $(document).ready(function() {
     .catch(err => console.log(err))
 
 
-
+//Muestra los coches filtrados por grupo
 $('.select ul').click( async(e)=>{
         const group = e.target.id;
 
@@ -51,13 +53,42 @@ $('.select ul').click( async(e)=>{
     $('.select-check').on('change',async (e)=>{
         
 
-            if($(`#${e.target.id}`).prop('checked')){
-                console.log(e.target.value)                
+            if($(`#${e.target.id}`).prop('checked')){   
                 carsFilter.push(e.target.value);
+
+                switch(e.target.value){
+                    case 'Automatic':
+                        $('#Manual').prop('disabled', true);
+                        break;
+                    case 'Manual':
+                        $('#Automatic').prop('disabled', true);
+                        break;
+                    case '7':
+                        $('#seats').prop('disabled', true);
+                        break;
+                    case '5':
+                        $('#seats2').prop('disabled', true);
+                        break;
+                }
             }
             
             else{
                 carsFilter.splice(carsFilter.indexOf(e.target.value),1);
+
+                switch(e.target.value){
+                    case 'Automatic':
+                        $('#Manual').prop('disabled', false);
+                        break;
+                    case 'Manual':
+                        $('#Automatic').prop('disabled', false);
+                        break;
+                    case '7':
+                        $('#seats').prop('disabled', false);
+                        break;
+                    case '5':
+                        $('#seats2').prop('disabled', false);
+                        break;
+                }
             }
 
 
