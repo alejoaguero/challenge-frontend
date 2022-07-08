@@ -102,7 +102,7 @@ $('.select ul').click( async(e)=>{
 
                 cars.map((car) => {
 
-                    if(carsFilter.includes(car.Company1.Features2.seats) || carsFilter.includes(car.Company1.Features2.transmition) || carsFilter.includes(car.Company1.Features2.category) && carsFilter.includes(car.Company1.VehGroup)){
+                    if(carsFilter.includes(car.Company1.Features2.seats) || carsFilter.includes(car.Company1.Features2.transmition) || carsFilter.includes(car.Company1.Features2.category)){
 
                             carsfilterM.push(car.Company1);
                     }
