@@ -107,7 +107,7 @@ $('.select ul').click( async(e)=>{
                             carsfilterM.push(car.Company1);
                     }
 
-                    if(carsFilter.includes(car.Company2.Features2.seats) || carsFilter.includes(car.Company2.Features2. transmition) || carsFilter.includes(car.Company2.Features2.category)){
+                    if(carsFilter.includes(car.Company2.Features2.seats) || carsFilter.includes(car.Company2.Features2.transmition) || carsFilter.includes(car.Company2.Features2.category)){
 
                             carsfilterM.push(car.Company2);
 
